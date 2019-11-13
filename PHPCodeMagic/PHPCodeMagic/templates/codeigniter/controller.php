@@ -2,13 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class {TABLE} extends MY_Controller {
-
+    
     public function __construct() {
         parent::__construct();
     }
 
-	public function index()
-	{
+    public function index()
+    {
         $this->load->model('{table}_model');
         $data = [
             'models' => $this->{table}_model->all(),
