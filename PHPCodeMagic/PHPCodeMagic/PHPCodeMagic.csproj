@@ -90,6 +90,9 @@
     <None Include="templates\codeigniter\controller.php">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="templates\codeigniter\empty.controller.php">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="templates\codeigniter\model.php">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

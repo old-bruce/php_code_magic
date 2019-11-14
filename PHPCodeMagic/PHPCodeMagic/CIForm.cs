@@ -45,5 +45,15 @@ namespace PHPCodeMagic
                 btnModel_Click(btnModel, EventArgs.Empty);
             }
         }
+
+        private void btnEmptyController_Click(object sender, EventArgs e)
+        {
+            string code = File.ReadAllText(Application.StartupPath + @"\templates\codeigniter\empty.controller.php");
+            string table = tbxTable.Text.Trim();
+            string TABLE = tbxTable.Text.Trim().ToUpper()[0] + tbxTable.Text.Trim().ToLower().Substring(1, tbxTable.Text.Trim().Length - 1);
+            code = code.Replace("{TABLE}", TABLE);
+            code = code.Replace("{table}", table);
+            rbxCode.Text = code;
+        }
     }
 }
